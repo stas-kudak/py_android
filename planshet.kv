@@ -1,0 +1,124 @@
+
+<Container>:
+
+    #cols:3
+    rows:3
+    padding:5
+    spacing:5
+
+    BoxLayout:
+        size_hint: 1,.7
+        BoxLayout:
+            size_hint: .28,1
+            Image:
+                size_hint: .7,.7
+                pos_hint:{'center_x': .5, 'center_y': 0.5}
+                source: 'logo.png'
+
+        BoxLayout:
+            size_hint: .72,1
+            orientation: 'vertical'
+            Label:
+                size_hint: 1,.4
+                halign: 'right'
+                valign: 'middle'
+                text_size: self.size
+                font_size: dp(20)
+                text: "Кабинет №2"
+                bold: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'bottom'
+                font_size: dp(25)
+                text: 'Медицинская сестра процедурного кабинета'
+                bold: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'top'
+                font_size: dp(25)
+                text: 'Мамиева Зита Саламовна'
+                #color:(1, .5, 0, 1)
+                bold: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+    BoxLayout:
+        padding:5
+        spacing:5
+        Label:
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            text: 'Идет прием врача'
+            bold: True
+            markup: True
+            outline_color: (0, 0, 0, 1)
+            outline_width:2
+            font_size: dp(60)
+
+
+    BoxLayout:
+        BoxLayout:
+            size_hint: .72,1
+            orientation: 'vertical'
+            padding:5
+            spacing:5
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'middle'
+                font_size: 40
+                text: 'А. Сослан Александрович'
+                bold: True
+                italic: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'middle'
+                font_size: 40
+                text: 'М. Абдуллах Магомедович'
+                bold: True
+                italic: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: .28,1
+            padding:5
+            spacing:5
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'bottom'
+                font_size: dp(35)
+                text: '11-08-2022'
+                bold: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+
+            Label:
+                text_size: self.size
+                halign: 'center'
+                valign: 'top'
+                font_size: dp(35)
+                text: '15:00'
+                bold: True
+                markup: True
+                outline_color: (0, 0, 0, 1)
+                outline_width:2
+
